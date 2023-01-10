@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(233, 233, 233);
+}
+
+.wrapper {
+  width: 600px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #000;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1580519542036-c47de6196ba5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+  color: white;
+  background-position: center;
+  background-size: cover;
+  text-transform: uppercase;
+  gap: 10px;
+}
+
+.bottom {
+  padding: 30px;
+}
+
+label {
+  display: block;
+}
+
+input,
+select {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.calculate {
+  display: block;
+  margin: 20px auto 10px;
+  padding: 20px 80px;
+  border-radius: 5px;
+  border-style: none;
+  transition: background-color, 500ms;
+}
+
+.calculate:hover {
+  background-color: rgb(74, 139, 74);
+  cursor: pointer;
+  color: white;
+}
+
+.result,
+.error {
+  display: none;
+  justify-content: center;
+}
